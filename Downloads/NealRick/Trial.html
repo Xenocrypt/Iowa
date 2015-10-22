@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+div {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; 
+	vertical-align: middle; 
+	overflow: hidden; 
+};
+
+.content { 
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+p{
+font-size:1px;
+};
+
+
+* {
+font-family:'Open Sans', sans-serif;
+};
+</style>
+<body>
+<div class="One">
+<svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+</svg>
+</div>
+</body>
+<script src="d3.v3.js"></script>
+<script>
+d3.select("svg").attr("class", "content").append("circle").attr({"r": "3px", "fill": "black", "cx":"100px", "cy":"236px", "stroke":"3px"});
+d3.select("svg").append("circle").attr({"r": "50px", "fill": "blue", "stroke":"3px", "cx":"200px", "cy":"200px"});
+</script>
